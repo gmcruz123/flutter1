@@ -28,7 +28,7 @@ class GradientBack extends StatelessWidget{
     return new Container(
       decoration: new BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xffffbb00),Color(0xfff38c02)],
+          colors: [Colors.orange,Colors.deepOrange],
           begin: const FractionalOffset(1.0, 0.1),
         end: const FractionalOffset(1.0, 0.0))
       ),

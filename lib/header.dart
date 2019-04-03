@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'BackWheater.dart';
+import 'Temperature.dart';
 
 class Header  extends StatelessWidget {
 
@@ -15,18 +16,18 @@ class Header  extends StatelessWidget {
           right: 20.0
         ),
         height: 50.0,
-        width: 100.0,
+        width: 200.0,
         decoration: new BoxDecoration(
           boxShadow:[
             new BoxShadow(
               color: Color(0xfff38b02),
               blurRadius: 30.0,
-              offset: new Offset(10.0, 10.0)
+              offset: new Offset(15.0, 15.0)
                   
             )
           ],
           borderRadius: new BorderRadius.circular(30.0),
-          color: Color(0xfffeb900)
+          color: Color(0xfffeb920)
         ),
         child: new Center(
           child: new Text("Go to calendar",
@@ -60,7 +61,7 @@ class Header  extends StatelessWidget {
                    fontWeight: FontWeight.w600
                  )
                 ),
-                button
+                button, new Temperature()
               ],
             ),
           )
