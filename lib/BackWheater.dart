@@ -11,9 +11,27 @@ class BackWheater extends StatelessWidget{ // stateless significa que no tiene e
         new Positioned(
           bottom: 0.0,
             child: new Container(
+              padding: EdgeInsets.only(
+                top: 20.0
+              ),
               width: MediaQuery.of(context).size.width,
               height: 250.0,
               color: Colors.white,
+              child:
+              Column(
+
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Expanded(child: new Icon( IconData(58050,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0, )),
+                    Expanded(child: new Icon( IconData(58343,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0)),
+                    Expanded(child: new Icon( IconData(59450,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0)),
+                    Expanded(child: new Icon( IconData(58416,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0))
+                  ],
+                )
+    ],
+    )
+             ,
         ))
       ],
     );

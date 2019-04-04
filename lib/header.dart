@@ -61,7 +61,14 @@ class Header  extends StatelessWidget {
                    fontWeight: FontWeight.w600
                  )
                 ),
-                button, new Temperature()
+                button,
+                new Container(
+                  child:  new Temperature(),
+                  margin: EdgeInsets.only(
+                    top: 25.0
+                  ),
+
+                )
               ],
             ),
           )
