@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/ClimaPackage/rowsWheather.dart';
+
 
 class BackWheater extends StatelessWidget{ // stateless significa que no tiene estado
                                            // Es decir no produce una reaccion no es un evento como lo es un boton
@@ -28,7 +30,8 @@ class BackWheater extends StatelessWidget{ // stateless significa que no tiene e
                     Expanded(child: new Icon( IconData(59450,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0)),
                     Expanded(child: new Icon( IconData(58416,fontFamily: 'MaterialIcons') , color: Colors.black26,size: 60.0))
                   ],
-                )
+                ),
+                RowsDays()
     ],
     )
              ,
